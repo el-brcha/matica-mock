@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Matica</title>
+
+	<link rel="icon" type="image/png" href="favicon.ico" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/simple-sidebar.css" />
+</head>
+<body>
+	<nav class="navbar navbar-light bg-light border-bottom">
+	  <a class="navbar-brand" id="menu-toggle" href="#menu-toggle">
+	    <img class="d-inline-block align-top" src="img/logo.png" width="64" height="64" />
+	  </a>
+	</nav>
+	<div class="toggled" id="wrapper">
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="dashboard.html">Matica | Pčelarski dnevnik</a>
+        </li>
+        <li>
+          <a href="dashboard.html">Početna stranica</a>
+        </li>
+        <li>
+          <a href="hive-list.html">Košnice</a>
+        </li>
+        <li>
+          <a href="settings.html">Podešavanja</a>
+        </li>
+        <li>
+          <a href="profile.html">Moj profil</a>
+        </li>
+      </ul>
+    </div>
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+				    <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+				    <form class="form-inline my-2 my-lg-0">
+				      <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Traži..." />
+				      <a class="btn btn-outline-primary btn-sm my-2 my-sm-0" href="hive-form.html">
+				      	<i class="fas fa-plus"></i>
+				      	Dodaj
+				      </a>
+				    </form>
+				  </div>
+				</nav>
+				<div class="table-responsive">
+					<table class="table table-striped table-hover">
+					  <thead class="thead-dark">
+					    <tr>
+					      <th scope="col">#</th>
+					      <th scope="col">Naziv</th>
+					      <th scope="col">Vrsta</th>
+					      <th scope="col">Boja</th>
+								<th scope="col">Broj ramova</th>
+								<th scope="col">Nastavak</th>
+								<th scope="col">Godište matice</th>
+								<th scope="col">Godina</th>		
+								<th scope="col">Opcije</th>	      
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">1</th>
+					      <td>Košnica 1</td>
+					      <td>DB</td>
+					      <td>žuta</td>
+					      <td>12</td>
+					      <td>
+					      	<div class="text-success">
+  									<i class="fas fa-check-circle"></i>
+									</div>
+					      </td>
+					      <td>2017</td>
+					      <td>2017</td>
+					     	<td>
+					    		<div class="btn-group btn-group-sm">
+								  <a class="btn btn-dark" href="hive-form.html">
+								  	<i class="far fa-edit"></i>
+								  </a>
+								  <a class="btn btn-danger" href="#">
+								  	<i class="far fa-trash-alt"></i>
+								  </a>
+									</div>
+					    	</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">2</th>
+					      <td>Košnica 2</td>
+					      <td>DB</td>
+					      <td>bijela</td>
+					      <td>12</td>
+					      <td>
+					      	<div class="text-danger">
+  									<i class="fas fa-times-circle"></i>
+									</div>
+					      </td>
+					      <td>2015</td>
+					      <td>2017</td>
+					     	<td>
+					    		<div class="btn-group btn-group-sm">
+								  <a class="btn btn-dark" href="hive-form.html">
+								  	<i class="far fa-edit"></i>
+								  </a>
+								  <a class="btn btn-danger" href="#">
+								  	<i class="far fa-trash-alt"></i>
+								  </a>
+									</div>
+					    	</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+      </div>
+    </div>
+  </div>
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+</html>
