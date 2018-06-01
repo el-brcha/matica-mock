@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Matica</title>
+
+	<link rel="icon" type="image/png" href="favicon.ico" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/simple-sidebar.css" />
+</head>
+<body>
+	<nav class="navbar navbar-light bg-light border-bottom">
+	  <a class="navbar-brand" id="menu-toggle" href="#menu-toggle">
+	    <img class="d-inline-block align-top" src="img/logo.png" width="64" height="64" />
+	  </a>
+	</nav>
+	<div class="toggled" id="wrapper">
+		<div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="dashboard.html">Matica | Pčelarski dnevnik</a>
+        </li>
+        <li>
+          <a href="dashboard.html">Početna stranica</a>
+        </li>
+        <li>
+          <a href="hive-list.html">Košnice</a>
+        </li>
+        <li>
+          <a href="product-list.html">Zalihe</a>
+        </li>
+        <li>
+          <a href="settings.html">Podešavanja</a>
+        </li>
+        <li>
+          <a href="profile.html">Moj profil</a>
+        </li>
+      </ul>
+    </div>
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+      	<div class="row">
+      		<div class="col-md-6">
+						<div class="card">
+						  <div class="text-center my-5">
+                <img class="card-img-top" src="img/beekeeper.png" style="width: 128px;" />
+              </div>
+						  <div class="card-body">
+								<form>
+                  <div class="form-group row">
+								    <label class="col-sm-3 col-form-label">Ime</label>
+								    <div class="col-sm-9">
+								      <input class="form-control form-control-sm" type="text">
+								    </div>
+								  </div>
+                  <div class="form-group row">
+								    <label class="col-sm-3 col-form-label">Prezime</label>
+								    <div class="col-sm-9">
+								      <input class="form-control form-control-sm" type="text">
+								    </div>
+								  </div>
+                  <div class="form-group row">
+								    <label class="col-sm-3 col-form-label">E-mail</label>
+								    <div class="col-sm-9">
+								      <input class="form-control form-control-sm" type="email">
+								    </div>
+								  </div>
+								  <div class="form-group row">
+								    <div class="col-sm-9">
+								      <a class="btn btn-success btn-sm" href="dashboard.html">
+								      	<i class="far fa-save"></i>
+								      	Sačuvaj
+								      </a>
+								    </div>
+								  </div>
+								</form>
+						  </div>
+						</div>
+      		</div>
+      	</div>
+      </div>
+    </div>
+  </div>
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+</html>
